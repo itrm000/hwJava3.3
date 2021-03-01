@@ -1,9 +1,9 @@
 package ru.netology.domain;
 
 public class Radio {
-    private static final int CHANNEL_MAX = 9;
+    private static final int CHANNEL_MAX = 10;
     private static final int CHANNEL_MIN = 0;
-    private static final int LEVEL_MAX = 10;
+    private static final int LEVEL_MAX = 100;
     private static final int LEVEL_MIN = 0;
 
     private int numberRadio;
