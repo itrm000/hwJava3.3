@@ -88,7 +88,7 @@ class RadioTest {
     void testSetLevelSoundRadioFAIL() {
         int actualNumberRadio = 4;
         int initialLevelSound = 1;
-        int newActualLevelSound = 20;
+        int newActualLevelSound = 120;
         String actualMessage = null;
 
         try {
@@ -117,7 +117,7 @@ class RadioTest {
 
     @Test
     void tesChannelNext9_OK() {
-        int actualNumberRadio = 9;
+        int actualNumberRadio = 10;
         int actualLevelSound = 10;
 
         Radio radio = new  Radio(actualNumberRadio, actualLevelSound);
@@ -163,7 +163,7 @@ class RadioTest {
         Radio radio = new  Radio(actualNumberRadio, actualLevelSound);
         int newActualChannal = radio.prev();
 
-        assertEquals(9, newActualChannal);
+        assertEquals(10, newActualChannal);
     }
 
     @Test
@@ -180,11 +180,11 @@ class RadioTest {
     @Test
     void testSoundLevelPlus10_OK(){
         int actualNumberRadio = 3;
-        int actualLevelSound = 10;
+        int actualLevelSound = 100;
         Radio radio = new  Radio(actualNumberRadio, actualLevelSound);
         int newActualLevelSound = radio.plusSound();
 
-        assertEquals(10, newActualLevelSound);
+        assertEquals(100, newActualLevelSound);
     }
 
     @Test
@@ -200,7 +200,7 @@ class RadioTest {
     @Test
     void testChannelPlus27_FAIL(){
         int actualNumberRadio = 3;
-        int actualLevelSound = 27;
+        int actualLevelSound = 135;
         String actualMessege = null;
 
         try {
